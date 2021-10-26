@@ -8,12 +8,17 @@
         >vue-cli documentation</a
       >.
     </p>
+    <flowchart/>
   </div>
 </template>
 
 <script>
+import flowchart from "./FlowChart.vue";
 export default {
   name: "HelloWorld",
+  components: {
+    flowchart,
+  },
   props: {
     msg: String,
   },
