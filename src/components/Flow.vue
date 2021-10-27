@@ -1,6 +1,6 @@
 <template>
   <div>
-          <div class="h3 text-muted display-6">Simple Decision  FlowChart</div>
+    <div class="h3 text-muted display-6">Simple Decision FlowChart</div>
 
     <vue-mermaid-string :value="diagram" class="mermaid" />
   </div>
