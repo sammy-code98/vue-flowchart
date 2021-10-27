@@ -1,25 +1,7 @@
 <template>
   <div id="app">
-    <NavBar
-      name="Logo Name"
-      :navLinks="[
-        {
-          name: 'Home',
-          link: '/home',
-        },
-        { name: 'About', link: '/about' },
-        {
-          name: 'Contacts',
-          link: '/contact',
-        },
-        {
-          name: 'Projects',
-          link: '/projects',
-        },
-      ]"
-    />
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <NavBar />
+    <HelloWorld />
   </div>
 </template>
 

@@ -1,32 +1,32 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <flowchart/>
+  <div class="container-xl my-contain">
+    <carousel />
+    <flowchart />
+    <br />
+    <br />
+    <flow class="my-margin" />
   </div>
 </template>
 
 <script>
 import flowchart from "./FlowChart.vue";
+import flow from "./Flow.vue";
+import carousel from "./Carousel.vue";
 export default {
   name: "HelloWorld",
   components: {
     flowchart,
-  },
-  props: {
-    msg: String,
+    flow,
+    carousel,
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.my-contain {
+  margin-top: 10px;
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -40,5 +40,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.my-margin {
+  margin: auto;
+  padding: 30px;
 }
 </style>
