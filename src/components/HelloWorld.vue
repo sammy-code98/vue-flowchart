@@ -8,16 +8,21 @@
         >vue-cli documentation</a
       >.
     </p>
-    <flowchart/>
+    <flowchart />
+    <br />
+    <br />
+    <flow class="my-margin" />
   </div>
 </template>
 
 <script>
 import flowchart from "./FlowChart.vue";
+import flow from "./Flow.vue";
 export default {
   name: "HelloWorld",
   components: {
     flowchart,
+    flow,
   },
   props: {
     msg: String,
@@ -40,5 +45,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.my-margin {
+  margin: auto;
+  padding: 30px;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="h3 text-muted display-6">JavaScript Ecosytem</div>
     <vue-mermaid-string :value="diagram" class="mermaid" />
   </div>
 </template>
